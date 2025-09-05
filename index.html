@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="S Santhosh Kiran - Competitive Programmer & Software Developer">
+    <meta name="author" content="S Santhosh Kiran">
+    
+    <title>S Santhosh Kiran - Portfolio</title>
+    
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    
+    <!-- Devicon icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bs-primary: #bd5d38;
+        }
+        
+        body {
+            font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            padding-top: 3.375rem;
+            color: #6c757d;
+        }
+        
+        @media (min-width: 992px) {
+            body {
+                padding-top: 0;
+                padding-left: 17rem;
+            }
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #343a40;
+        }
+        
+        h1 {
+            font-size: 6rem;
+            line-height: 1;
+        }
+        
+        h2 {
+            font-size: 3.5rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+        
+        p.lead {
+            font-size: 1.15rem;
+            font-weight: 400;
+        }
+        
+        .subheading {
+            font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
+        
+        .text-primary {
+            color: #bd5d38 !important;
+        }
+        
+        .bg-primary {
+            background-color: #bd5d38 !important;
+        }
+        
+        a {
+            color: #bd5d38;
+        }
+        
+        a:hover {
+            color: #824027;
+        }
+        
+        /* Navigation */
+        #sideNav {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        #sideNav .navbar-nav .nav-item .nav-link {
+            font-weight: 800;
+            letter-spacing: 0.05rem;
+            text-transform: uppercase;
+        }
+        
+        #sideNav .navbar-toggler {
+            background-color: #bd5d38;
+            border-color: #bd5d38;
+        }
+        
+        #sideNav .navbar-toggler:focus {
+            outline-color: #d47652;
+        }
+        
+        @media (min-width: 992px) {
+            #sideNav {
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                width: 17rem;
+                height: 100vh;
+            }
+            
+            #sideNav .navbar-brand {
+                display: flex;
+                margin: auto auto 0;
+                padding: 0.5rem;
+            }
+            
+            #sideNav .navbar-brand .img-profile {
+                width: 100px;
+                height: 100px;
+                border: 0.5rem solid rgba(255, 255, 255, 0.2);
+            }
+            
+            #sideNav .navbar-collapse {
+                display: flex;
+                align-items: flex-start;
+                flex-grow: 0;
+                width: 100%;
+                margin-bottom: auto;
+            }
+            
+            #sideNav .navbar-nav {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            #sideNav .navbar-nav .nav-item {
+                display: block;
+            }
+            
+            #sideNav .navbar-nav .nav-item .nav-link {
+                display: block;
+            }
+        }
+        
+        .img-profile {
+            display: block;
+            margin: 0 auto;
+            width: 280px;
+            height: 280px;
+            border: 0.5rem solid rgba(255, 255, 255, 0.2);
+            object-fit: cover;
+        }
+        
+        .social-icons .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.5rem;
+            width: 3.5rem;
+            background-color: #495057;
+            color: #fff;
+            border-radius: 100%;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+        }
+        
+        .social-icons .social-icon:last-child {
+            margin-right: 0;
+        }
+        
+        .social-icons .social-icon:hover {
+            background-color: #bd5d38;
+        }
+        
+        .dev-icons {
+            font-size: 3rem;
+        }
+        
+        .dev-icons .list-inline-item i:hover {
+            color: #bd5d38;
+        }
+        
+        /* Resume sections */
+        section.resume-section {
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            max-width: 75rem;
+        }
+        
+        section.resume-section .resume-section-content {
+            width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            section.resume-section {
+                min-height: 100vh;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            section.resume-section {
+                padding-left: 3rem;
+                padding-right: 3rem;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+            }
+        }
+        
+        /* Skills tags */
+        .skill-tags {
+            margin-left: 0px;
+        }
+        
+        .skill-tag {
+            background-color: #eceff5;
+            display: inline-block;
+            padding: 4px 8px;
+            margin-bottom: 8px;
+            margin-right: 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            color: #495057;
+        }
+        
+        .project-icon {
+            font-size: 2rem !important;
+            text-decoration: none;
+            margin-top: 5%;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom styling */
+        .lead {
+            font-size: 1.125rem;
+            font-weight: 300;
+        }
+        
+        hr {
+            border-color: #bd5d38;
+            border-width: 2px;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">S Santhosh Kiran</span>
+            <span class="d-none d-lg-block">
+                <!-- Add your profile image here if you have one -->
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#achievements">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid p-0">
+        
+        <!-- About -->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    S Santhosh
+                    <span class="text-primary">Kiran</span>
+                </h1>
+                <div class="subheading mb-5">
+                    <a href="mailto:s.santhosh@iiitb.ac.in">s.santhosh@iiitb.ac.in</a>
+                    <br>
+                    <a href="https://github.com/KeyserSozeIN" target="_blank">github.com/KeyserSozeIN</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid img-profile rounded-circle mb-2" src="myportfolio.png" alt="profile picture">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="lead mb-5">
+                            I am a distinguished competitive programmer with demonstrated excellence across multiple platforms: Codeforces Expert rating, CodeChef 5-star rating, and top 0.33 percentile performance on LeetCode. As a computer science scholar, I possess deep expertise in advanced algorithms, data structures, and computational problem-solving, with a proven track record of optimizing complex systems and architecting scalable solutions.
+                            <br><br>
+                            My competitive programming foundation encompasses 1000+ solved problems across premier platforms including Codeforces, CodeChef, and AtCoder. This rigorous algorithmic training has cultivated an analytical mindset that I strategically apply to enterprise-level software development, specializing in high-performance applications, system architecture, and scalable web technologies.
+                            <br><br>
+                            Beyond competitive achievements, I drive innovation in full-stack development with particular expertise in performance optimization, database architecture, and computational efficiency. I am passionate about mentoring emerging talent, contributing to open-source initiatives, and developing cutting-edge solutions that push the boundaries of algorithmic thinking and software engineering excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <!-- Experience -->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Future Technologies, Madurai</h3>
+                        <div class="subheading mb-3">Full Stack Engineer Intern</div>
+                        <p>
+                            Worked as a full stack engineer intern developing end-to-end web applications using modern technologies. 
+                            Built responsive front-end interfaces and robust back-end APIs, focusing on performance optimization and scalable architecture.
+                            Collaborated with senior developers on code reviews and implemented best practices for software development lifecycle.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">Summer 2025</span>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Kiran Graphics, Chennai</h3>
+                        <div class="subheading mb-3">UI/UX Designer</div>
+                        <p>
+                            Worked as a UI/UX designer creating user-centered design solutions for digital products. 
+                            Designed intuitive user interfaces and enhanced user experiences through research, wireframing, and prototyping.
+                            Collaborated with development teams to implement design systems and ensure pixel-perfect execution.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">Summer 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <!-- Education -->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">International Institute of Information Technology Bangalore</h3>
+                        <div class="subheading mb-3">Integrated M.Tech in Computer Science</div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">August 2023 - Present</span>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Sri Chaitanya Techno School, Chennai</h3>
+                        <div class="subheading mb-3">Physics, Chemistry, Mathematics</div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2021 - 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <!-- Achievements -->
+        <section class="resume-section" id="achievements">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Achievements</h2>
+                
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">JEE Mains</h3>
+                        <div class="subheading mb-3">Rank 7093 - 99.3 percentile</div>
+                        <p>Competed with 11.13 lakh students and achieved top 1% performance in one of India's most competitive engineering entrance exams.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2023</span>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Codeforces</h3>
+                        <div class="subheading mb-3">Expert Rating</div>
+                        <p>Achieved Expert level on Codeforces, demonstrating strong problem-solving skills and algorithmic thinking in competitive programming.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2024</span>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">LeetCode</h3>
+                        <div class="subheading mb-3">Top 0.33 percentile</div>
+                        <p>Solved over 1500 problems and achieved top 0.33 percentile ranking, showcasing exceptional consistency and depth in algorithmic problem solving.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2024</span>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">CodeChef</h3>
+                        <div class="subheading mb-3">5 Star Rating (Above 2000)</div>
+                        <p>Maintained a consistent 5-star rating with rating above 2000, demonstrating advanced competitive programming skills across diverse problem sets.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <!-- Skills -->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item">
+                        <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-css3-alt"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-js-square"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-typescript-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-react"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-angular"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-node-js"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-python"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-c-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-cplusplus-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-java-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-django-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-express-original"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-mongodb-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-postgresql-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-mysql-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-redis-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-docker"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-aws"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-kubernetes-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-git-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-github"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-linux-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-vim-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-vscode-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-npm"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <!-- Projects -->
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Projects</h2>
+                
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Complan Beta - Community Planning System</h3>
+                        <p>
+                            A comprehensive community planning application that helps college students collaborate through carpooling and shared resource utilization. Features secure authentication, washing machine slot booking, vehicle pooling coordination, and a gamified leaderboard system to encourage proper usage of shared services.
+                        </p>
+                        <div class="skill-tags">
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">Java</div>
+                            <div class="skill-tag">File I/O</div>
+                            <div class="skill-tag">CLI Application</div>
+                        </div>
+                        <a class="social-icon project-icon" href="https://github.com/KeyserSozeIN/Complan" target="_blank">
+                            <i class="devicon-github-original colored"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Project Name 2</h3>
+                        <p>
+                            An innovative solution for data visualization and analytics. 
+                            Built with Python and modern web technologies.
+                        </p>
+                        <div class="skill-tags">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">Django</div>
+                            <div class="skill-tag">PostgreSQL</div>
+                        </div>
+                        <a class="social-icon project-icon" href="https://github.com/KeyserSozeIN/project2" target="_blank">
+                            <i class="devicon-github-original colored"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="m-0">
+    </div>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Core theme JS -->
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            // Activate Bootstrap scrollspy on the main nav element
+            const sideNav = document.body.querySelector('#sideNav');
+            if (sideNav) {
+                new bootstrap.ScrollSpy(document.body, {
+                    target: '#sideNav',
+                    offset: 74,
+                });
+            }
+            
+            // Collapse responsive navbar when toggler is visible
+            const navbarToggler = document.body.querySelector('.navbar-toggler');
+            const responsiveNavItems = [].slice.call(
+                document.querySelectorAll('#navbarResponsive .nav-link')
+            );
+            responsiveNavItems.map(function (responsiveNavItem) {
+                responsiveNavItem.addEventListener('click', () => {
+                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                        navbarToggler.click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
